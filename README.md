@@ -6,6 +6,11 @@ specifically the ratio of edits staff make on public vs. private wikis.
 
 Coordination is happening in https://etherpad.wikimedia.org/p/wmf-open-editing
 
+Some principles to guide this work:
+* Keep everything aggregated at the highest level until we've had time to
+discuss the implications of more detailed grouping.
+* Do our best to not make value judgements or interpretations of the data.
+
 Methods
 ======
 
@@ -54,6 +59,22 @@ over all wikis.  For private wikis, we dump all users.  For public wikis, we
 inner join against the staff accounts list.
 
     DB_PASS='foo' python make_loader.py > count_loader.sql
+
+Run `count_loader.sql`.
+
+Get totals:
+
+```
+select
+	month,
+	sum(edit_count) as edit_count
+from awight_wiki_edit_counts c
+join awight_dbs d
+    on d.dbname=c.wiki
+where
+    d.private=0 -- and 1 in a separate query
+group by c.month;
+```
 
 TODO
 ======

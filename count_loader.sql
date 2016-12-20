@@ -4419,19 +4419,6 @@ insert into awight_wiki_edit_counts
     group by 1,2;
 
 
--- information_schema (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'information_schema' as wiki
-    from information_schema.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
 -- iowiki (public)
 insert into awight_wiki_edit_counts
     select
@@ -5779,19 +5766,6 @@ insert into awight_wiki_edit_counts
         count(*) as edit_count,
         'lnwiktionary' as wiki
     from lnwiktionary.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- log (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'log' as wiki
-    from log.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7643,19 +7617,6 @@ insert into awight_wiki_edit_counts
     group by 1,2;
 
 
--- project_illustration (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'project_illustration' as wiki
-    from project_illustration.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
 -- pswiki (public)
 insert into awight_wiki_edit_counts
     select
@@ -9047,19 +9008,6 @@ insert into awight_wiki_edit_counts
     group by 1,2;
 
 
--- staging (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'staging' as wiki
-    from staging.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
 -- stqwiki (public)
 insert into awight_wiki_edit_counts
     select
@@ -9419,19 +9367,6 @@ insert into awight_wiki_edit_counts
         count(*) as edit_count,
         'tenwiki' as wiki
     from tenwiki.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- test (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'test' as wiki
-    from test.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10633,19 +10568,6 @@ insert into awight_wiki_edit_counts
     group by 1,2;
 
 
--- warehouse (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'warehouse' as wiki
-    from warehouse.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
 -- warwiki (public)
 insert into awight_wiki_edit_counts
     select
@@ -10875,19 +10797,6 @@ insert into awight_wiki_edit_counts
         count(*) as edit_count,
         'wikimania2017wiki' as wiki
     from wikimania2017wiki.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- wikishared (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'wikishared' as wiki
-    from wikishared.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
