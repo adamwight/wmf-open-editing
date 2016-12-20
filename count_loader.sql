@@ -6,7 +6,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aawiki' as wiki
-    from metawiki.revision r
+    from aawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -19,7 +19,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aawikibooks' as wiki
-    from metawiki.revision r
+    from aawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -32,7 +32,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aawiktionary' as wiki
-    from metawiki.revision r
+    from aawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -45,7 +45,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'abwiki' as wiki
-    from metawiki.revision r
+    from abwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -58,7 +58,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'abwiktionary' as wiki
-    from metawiki.revision r
+    from abwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -71,7 +71,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'acewiki' as wiki
-    from metawiki.revision r
+    from acewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -84,7 +84,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'advisorywiki' as wiki
-    from metawiki.revision r
+    from advisorywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -97,7 +97,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'adywiki' as wiki
-    from metawiki.revision r
+    from adywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -110,7 +110,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'afwiki' as wiki
-    from metawiki.revision r
+    from afwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -123,7 +123,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'afwikibooks' as wiki
-    from metawiki.revision r
+    from afwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -136,7 +136,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'afwikiquote' as wiki
-    from metawiki.revision r
+    from afwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -149,7 +149,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'afwiktionary' as wiki
-    from metawiki.revision r
+    from afwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -162,7 +162,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'akwiki' as wiki
-    from metawiki.revision r
+    from akwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -175,7 +175,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'akwikibooks' as wiki
-    from metawiki.revision r
+    from akwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -188,7 +188,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'akwiktionary' as wiki
-    from metawiki.revision r
+    from akwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -201,7 +201,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'alswiki' as wiki
-    from metawiki.revision r
+    from alswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -214,7 +214,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'alswikibooks' as wiki
-    from metawiki.revision r
+    from alswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -227,7 +227,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'alswikiquote' as wiki
-    from metawiki.revision r
+    from alswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -240,7 +240,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'alswiktionary' as wiki
-    from metawiki.revision r
+    from alswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -253,7 +253,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'amwiki' as wiki
-    from metawiki.revision r
+    from amwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -266,7 +266,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'amwikiquote' as wiki
-    from metawiki.revision r
+    from amwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -279,7 +279,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'amwiktionary' as wiki
-    from metawiki.revision r
+    from amwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -292,7 +292,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'angwiki' as wiki
-    from metawiki.revision r
+    from angwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -305,7 +305,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'angwikibooks' as wiki
-    from metawiki.revision r
+    from angwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -318,7 +318,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'angwikiquote' as wiki
-    from metawiki.revision r
+    from angwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -331,7 +331,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'angwikisource' as wiki
-    from metawiki.revision r
+    from angwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -344,7 +344,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'angwiktionary' as wiki
-    from metawiki.revision r
+    from angwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -357,7 +357,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'anwiki' as wiki
-    from metawiki.revision r
+    from anwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -370,7 +370,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'anwiktionary' as wiki
-    from metawiki.revision r
+    from anwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -383,7 +383,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arcwiki' as wiki
-    from metawiki.revision r
+    from arcwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -396,7 +396,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwiki' as wiki
-    from metawiki.revision r
+    from arwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -409,7 +409,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikibooks' as wiki
-    from metawiki.revision r
+    from arwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -422,7 +422,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikimedia' as wiki
-    from metawiki.revision r
+    from arwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -435,7 +435,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikinews' as wiki
-    from metawiki.revision r
+    from arwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -448,7 +448,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikiquote' as wiki
-    from metawiki.revision r
+    from arwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -461,7 +461,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikisource' as wiki
-    from metawiki.revision r
+    from arwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -474,7 +474,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwikiversity' as wiki
-    from metawiki.revision r
+    from arwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -487,7 +487,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arwiktionary' as wiki
-    from metawiki.revision r
+    from arwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -500,7 +500,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arzwiki' as wiki
-    from metawiki.revision r
+    from arzwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -513,7 +513,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'astwiki' as wiki
-    from metawiki.revision r
+    from astwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -526,7 +526,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'astwikibooks' as wiki
-    from metawiki.revision r
+    from astwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -539,7 +539,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'astwikiquote' as wiki
-    from metawiki.revision r
+    from astwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -552,7 +552,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'astwiktionary' as wiki
-    from metawiki.revision r
+    from astwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -565,7 +565,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aswiki' as wiki
-    from metawiki.revision r
+    from aswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -578,7 +578,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aswikibooks' as wiki
-    from metawiki.revision r
+    from aswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -591,7 +591,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aswikisource' as wiki
-    from metawiki.revision r
+    from aswikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -604,7 +604,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aswiktionary' as wiki
-    from metawiki.revision r
+    from aswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -617,7 +617,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'avwiki' as wiki
-    from metawiki.revision r
+    from avwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -630,7 +630,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'avwiktionary' as wiki
-    from metawiki.revision r
+    from avwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -643,7 +643,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aywiki' as wiki
-    from metawiki.revision r
+    from aywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -656,7 +656,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aywikibooks' as wiki
-    from metawiki.revision r
+    from aywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -669,7 +669,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'aywiktionary' as wiki
-    from metawiki.revision r
+    from aywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -682,7 +682,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azbwiki' as wiki
-    from metawiki.revision r
+    from azbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -695,7 +695,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azwiki' as wiki
-    from metawiki.revision r
+    from azwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -708,7 +708,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azwikibooks' as wiki
-    from metawiki.revision r
+    from azwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -721,7 +721,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azwikiquote' as wiki
-    from metawiki.revision r
+    from azwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -734,7 +734,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azwikisource' as wiki
-    from metawiki.revision r
+    from azwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -747,7 +747,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'azwiktionary' as wiki
-    from metawiki.revision r
+    from azwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -760,7 +760,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'barwiki' as wiki
-    from metawiki.revision r
+    from barwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -773,7 +773,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bat_smgwiki' as wiki
-    from metawiki.revision r
+    from bat_smgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -786,7 +786,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bawiki' as wiki
-    from metawiki.revision r
+    from bawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -799,7 +799,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bawikibooks' as wiki
-    from metawiki.revision r
+    from bawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -812,7 +812,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bclwiki' as wiki
-    from metawiki.revision r
+    from bclwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -825,7 +825,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bdwikimedia' as wiki
-    from metawiki.revision r
+    from bdwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -838,7 +838,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'be_x_oldwiki' as wiki
-    from metawiki.revision r
+    from be_x_oldwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -851,7 +851,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'betawikiversity' as wiki
-    from metawiki.revision r
+    from betawikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -864,7 +864,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewiki' as wiki
-    from metawiki.revision r
+    from bewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -877,7 +877,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewikibooks' as wiki
-    from metawiki.revision r
+    from bewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -890,7 +890,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewikimedia' as wiki
-    from metawiki.revision r
+    from bewikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -903,7 +903,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewikiquote' as wiki
-    from metawiki.revision r
+    from bewikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -916,7 +916,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewikisource' as wiki
-    from metawiki.revision r
+    from bewikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -929,7 +929,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bewiktionary' as wiki
-    from metawiki.revision r
+    from bewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -942,7 +942,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwiki' as wiki
-    from metawiki.revision r
+    from bgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -955,7 +955,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwikibooks' as wiki
-    from metawiki.revision r
+    from bgwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -968,7 +968,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwikinews' as wiki
-    from metawiki.revision r
+    from bgwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -981,7 +981,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwikiquote' as wiki
-    from metawiki.revision r
+    from bgwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -994,7 +994,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwikisource' as wiki
-    from metawiki.revision r
+    from bgwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1007,7 +1007,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bgwiktionary' as wiki
-    from metawiki.revision r
+    from bgwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1020,7 +1020,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bhwiki' as wiki
-    from metawiki.revision r
+    from bhwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1033,7 +1033,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bhwiktionary' as wiki
-    from metawiki.revision r
+    from bhwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1046,7 +1046,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'biwiki' as wiki
-    from metawiki.revision r
+    from biwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1059,7 +1059,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'biwikibooks' as wiki
-    from metawiki.revision r
+    from biwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1072,7 +1072,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'biwiktionary' as wiki
-    from metawiki.revision r
+    from biwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1085,7 +1085,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bjnwiki' as wiki
-    from metawiki.revision r
+    from bjnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1098,7 +1098,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bmwiki' as wiki
-    from metawiki.revision r
+    from bmwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1111,7 +1111,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bmwikibooks' as wiki
-    from metawiki.revision r
+    from bmwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1124,7 +1124,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bmwikiquote' as wiki
-    from metawiki.revision r
+    from bmwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1137,7 +1137,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bmwiktionary' as wiki
-    from metawiki.revision r
+    from bmwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1150,7 +1150,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bnwiki' as wiki
-    from metawiki.revision r
+    from bnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1163,7 +1163,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bnwikibooks' as wiki
-    from metawiki.revision r
+    from bnwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1176,7 +1176,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bnwikisource' as wiki
-    from metawiki.revision r
+    from bnwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1189,7 +1189,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bnwiktionary' as wiki
-    from metawiki.revision r
+    from bnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1202,7 +1202,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bowiki' as wiki
-    from metawiki.revision r
+    from bowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1215,7 +1215,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bowikibooks' as wiki
-    from metawiki.revision r
+    from bowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1228,7 +1228,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bowiktionary' as wiki
-    from metawiki.revision r
+    from bowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1241,7 +1241,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bpywiki' as wiki
-    from metawiki.revision r
+    from bpywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1254,7 +1254,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'brwiki' as wiki
-    from metawiki.revision r
+    from brwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1267,7 +1267,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'brwikimedia' as wiki
-    from metawiki.revision r
+    from brwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1280,7 +1280,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'brwikiquote' as wiki
-    from metawiki.revision r
+    from brwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1293,7 +1293,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'brwikisource' as wiki
-    from metawiki.revision r
+    from brwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1306,7 +1306,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'brwiktionary' as wiki
-    from metawiki.revision r
+    from brwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1319,7 +1319,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswiki' as wiki
-    from metawiki.revision r
+    from bswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1332,7 +1332,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswikibooks' as wiki
-    from metawiki.revision r
+    from bswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1345,7 +1345,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswikinews' as wiki
-    from metawiki.revision r
+    from bswikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1358,7 +1358,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswikiquote' as wiki
-    from metawiki.revision r
+    from bswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1371,7 +1371,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswikisource' as wiki
-    from metawiki.revision r
+    from bswikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1384,7 +1384,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bswiktionary' as wiki
-    from metawiki.revision r
+    from bswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1397,7 +1397,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bugwiki' as wiki
-    from metawiki.revision r
+    from bugwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1410,7 +1410,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'bxrwiki' as wiki
-    from metawiki.revision r
+    from bxrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1423,7 +1423,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawiki' as wiki
-    from metawiki.revision r
+    from cawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1436,7 +1436,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawikibooks' as wiki
-    from metawiki.revision r
+    from cawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1449,7 +1449,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawikimedia' as wiki
-    from metawiki.revision r
+    from cawikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1462,7 +1462,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawikinews' as wiki
-    from metawiki.revision r
+    from cawikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1475,7 +1475,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawikiquote' as wiki
-    from metawiki.revision r
+    from cawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1488,7 +1488,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawikisource' as wiki
-    from metawiki.revision r
+    from cawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1501,7 +1501,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cawiktionary' as wiki
-    from metawiki.revision r
+    from cawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1514,7 +1514,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cbk_zamwiki' as wiki
-    from metawiki.revision r
+    from cbk_zamwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1527,7 +1527,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cdowiki' as wiki
-    from metawiki.revision r
+    from cdowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1540,20 +1540,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cebwiki' as wiki
-    from metawiki.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- centralauth (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'centralauth' as wiki
-    from metawiki.revision r
+    from cebwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1566,7 +1553,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cewiki' as wiki
-    from metawiki.revision r
+    from cewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1579,7 +1566,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chowiki' as wiki
-    from metawiki.revision r
+    from chowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1592,7 +1579,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chrwiki' as wiki
-    from metawiki.revision r
+    from chrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1605,7 +1592,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chrwiktionary' as wiki
-    from metawiki.revision r
+    from chrwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1618,7 +1605,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chwiki' as wiki
-    from metawiki.revision r
+    from chwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1631,7 +1618,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chwikibooks' as wiki
-    from metawiki.revision r
+    from chwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1644,7 +1631,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chwiktionary' as wiki
-    from metawiki.revision r
+    from chwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1657,7 +1644,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chywiki' as wiki
-    from metawiki.revision r
+    from chywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1670,7 +1657,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ckbwiki' as wiki
-    from metawiki.revision r
+    from ckbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1683,7 +1670,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cnwikimedia' as wiki
-    from metawiki.revision r
+    from cnwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1696,7 +1683,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'commonswiki' as wiki
-    from metawiki.revision r
+    from commonswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1709,7 +1696,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cowiki' as wiki
-    from metawiki.revision r
+    from cowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1722,7 +1709,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cowikibooks' as wiki
-    from metawiki.revision r
+    from cowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1735,7 +1722,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cowikimedia' as wiki
-    from metawiki.revision r
+    from cowikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1748,7 +1735,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cowikiquote' as wiki
-    from metawiki.revision r
+    from cowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1761,7 +1748,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cowiktionary' as wiki
-    from metawiki.revision r
+    from cowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1774,7 +1761,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'crhwiki' as wiki
-    from metawiki.revision r
+    from crhwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1787,7 +1774,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'crwiki' as wiki
-    from metawiki.revision r
+    from crwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1800,7 +1787,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'crwikiquote' as wiki
-    from metawiki.revision r
+    from crwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1813,7 +1800,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'crwiktionary' as wiki
-    from metawiki.revision r
+    from crwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1826,7 +1813,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'csbwiki' as wiki
-    from metawiki.revision r
+    from csbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1839,7 +1826,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'csbwiktionary' as wiki
-    from metawiki.revision r
+    from csbwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1852,7 +1839,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswiki' as wiki
-    from metawiki.revision r
+    from cswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1865,7 +1852,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswikibooks' as wiki
-    from metawiki.revision r
+    from cswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1878,7 +1865,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswikinews' as wiki
-    from metawiki.revision r
+    from cswikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1891,7 +1878,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswikiquote' as wiki
-    from metawiki.revision r
+    from cswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1904,7 +1891,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswikisource' as wiki
-    from metawiki.revision r
+    from cswikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1917,7 +1904,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswikiversity' as wiki
-    from metawiki.revision r
+    from cswikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1930,7 +1917,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cswiktionary' as wiki
-    from metawiki.revision r
+    from cswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1943,7 +1930,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cuwiki' as wiki
-    from metawiki.revision r
+    from cuwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1956,7 +1943,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cvwiki' as wiki
-    from metawiki.revision r
+    from cvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1969,7 +1956,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cvwikibooks' as wiki
-    from metawiki.revision r
+    from cvwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1982,7 +1969,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cywiki' as wiki
-    from metawiki.revision r
+    from cywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -1995,7 +1982,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cywikibooks' as wiki
-    from metawiki.revision r
+    from cywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2008,7 +1995,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cywikiquote' as wiki
-    from metawiki.revision r
+    from cywikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2021,7 +2008,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cywikisource' as wiki
-    from metawiki.revision r
+    from cywikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2034,20 +2021,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'cywiktionary' as wiki
-    from metawiki.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- datasets (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'datasets' as wiki
-    from metawiki.revision r
+    from cywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2060,7 +2034,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dawiki' as wiki
-    from metawiki.revision r
+    from dawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2073,7 +2047,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dawikibooks' as wiki
-    from metawiki.revision r
+    from dawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2086,7 +2060,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dawikiquote' as wiki
-    from metawiki.revision r
+    from dawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2099,7 +2073,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dawikisource' as wiki
-    from metawiki.revision r
+    from dawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2112,7 +2086,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dawiktionary' as wiki
-    from metawiki.revision r
+    from dawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2125,7 +2099,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewiki' as wiki
-    from metawiki.revision r
+    from dewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2138,7 +2112,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikibooks' as wiki
-    from metawiki.revision r
+    from dewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2151,7 +2125,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikinews' as wiki
-    from metawiki.revision r
+    from dewikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2164,7 +2138,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikiquote' as wiki
-    from metawiki.revision r
+    from dewikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2177,7 +2151,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikisource' as wiki
-    from metawiki.revision r
+    from dewikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2190,7 +2164,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikiversity' as wiki
-    from metawiki.revision r
+    from dewikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2203,7 +2177,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewikivoyage' as wiki
-    from metawiki.revision r
+    from dewikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2216,7 +2190,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dewiktionary' as wiki
-    from metawiki.revision r
+    from dewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2229,7 +2203,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'diqwiki' as wiki
-    from metawiki.revision r
+    from diqwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2242,7 +2216,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dkwikimedia' as wiki
-    from metawiki.revision r
+    from dkwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2255,7 +2229,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'donatewiki' as wiki
-    from metawiki.revision r
+    from donatewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2268,7 +2242,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dsbwiki' as wiki
-    from metawiki.revision r
+    from dsbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2281,7 +2255,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dvwiki' as wiki
-    from metawiki.revision r
+    from dvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2294,7 +2268,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dvwiktionary' as wiki
-    from metawiki.revision r
+    from dvwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2307,7 +2281,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dzwiki' as wiki
-    from metawiki.revision r
+    from dzwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2320,7 +2294,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'dzwiktionary' as wiki
-    from metawiki.revision r
+    from dzwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2333,7 +2307,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eewiki' as wiki
-    from metawiki.revision r
+    from eewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2346,7 +2320,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwiki' as wiki
-    from metawiki.revision r
+    from elwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2359,7 +2333,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikibooks' as wiki
-    from metawiki.revision r
+    from elwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2372,7 +2346,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikinews' as wiki
-    from metawiki.revision r
+    from elwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2385,7 +2359,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikiquote' as wiki
-    from metawiki.revision r
+    from elwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2398,7 +2372,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikisource' as wiki
-    from metawiki.revision r
+    from elwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2411,7 +2385,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikiversity' as wiki
-    from metawiki.revision r
+    from elwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2424,7 +2398,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwikivoyage' as wiki
-    from metawiki.revision r
+    from elwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2437,7 +2411,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'elwiktionary' as wiki
-    from metawiki.revision r
+    from elwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2450,7 +2424,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'emlwiki' as wiki
-    from metawiki.revision r
+    from emlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2463,7 +2437,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwiki' as wiki
-    from metawiki.revision r
+    from enwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2476,7 +2450,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikibooks' as wiki
-    from metawiki.revision r
+    from enwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2489,7 +2463,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikinews' as wiki
-    from metawiki.revision r
+    from enwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2502,7 +2476,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikiquote' as wiki
-    from metawiki.revision r
+    from enwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2515,7 +2489,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikisource' as wiki
-    from metawiki.revision r
+    from enwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2528,7 +2502,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikiversity' as wiki
-    from metawiki.revision r
+    from enwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2541,7 +2515,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwikivoyage' as wiki
-    from metawiki.revision r
+    from enwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2554,7 +2528,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'enwiktionary' as wiki
-    from metawiki.revision r
+    from enwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2567,7 +2541,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowiki' as wiki
-    from metawiki.revision r
+    from eowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2580,7 +2554,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowikibooks' as wiki
-    from metawiki.revision r
+    from eowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2593,7 +2567,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowikinews' as wiki
-    from metawiki.revision r
+    from eowikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2606,7 +2580,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowikiquote' as wiki
-    from metawiki.revision r
+    from eowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2619,7 +2593,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowikisource' as wiki
-    from metawiki.revision r
+    from eowikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2632,7 +2606,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eowiktionary' as wiki
-    from metawiki.revision r
+    from eowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2645,7 +2619,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswiki' as wiki
-    from metawiki.revision r
+    from eswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2658,7 +2632,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikibooks' as wiki
-    from metawiki.revision r
+    from eswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2671,7 +2645,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikinews' as wiki
-    from metawiki.revision r
+    from eswikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2684,7 +2658,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikiquote' as wiki
-    from metawiki.revision r
+    from eswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2697,7 +2671,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikisource' as wiki
-    from metawiki.revision r
+    from eswikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2710,7 +2684,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikiversity' as wiki
-    from metawiki.revision r
+    from eswikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2723,7 +2697,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswikivoyage' as wiki
-    from metawiki.revision r
+    from eswikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2736,7 +2710,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'eswiktionary' as wiki
-    from metawiki.revision r
+    from eswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2749,7 +2723,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwiki' as wiki
-    from metawiki.revision r
+    from etwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2762,7 +2736,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwikibooks' as wiki
-    from metawiki.revision r
+    from etwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2775,7 +2749,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwikimedia' as wiki
-    from metawiki.revision r
+    from etwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2788,7 +2762,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwikiquote' as wiki
-    from metawiki.revision r
+    from etwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2801,7 +2775,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwikisource' as wiki
-    from metawiki.revision r
+    from etwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2814,7 +2788,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'etwiktionary' as wiki
-    from metawiki.revision r
+    from etwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2827,7 +2801,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'euwiki' as wiki
-    from metawiki.revision r
+    from euwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2840,7 +2814,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'euwikibooks' as wiki
-    from metawiki.revision r
+    from euwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2853,7 +2827,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'euwikiquote' as wiki
-    from metawiki.revision r
+    from euwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2866,7 +2840,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'euwiktionary' as wiki
-    from metawiki.revision r
+    from euwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2879,7 +2853,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'extwiki' as wiki
-    from metawiki.revision r
+    from extwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2892,7 +2866,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawiki' as wiki
-    from metawiki.revision r
+    from fawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2905,7 +2879,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawikibooks' as wiki
-    from metawiki.revision r
+    from fawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2918,7 +2892,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawikinews' as wiki
-    from metawiki.revision r
+    from fawikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2931,7 +2905,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawikiquote' as wiki
-    from metawiki.revision r
+    from fawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2944,7 +2918,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawikisource' as wiki
-    from metawiki.revision r
+    from fawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2957,7 +2931,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawikivoyage' as wiki
-    from metawiki.revision r
+    from fawikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2970,7 +2944,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fawiktionary' as wiki
-    from metawiki.revision r
+    from fawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2983,7 +2957,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ffwiki' as wiki
-    from metawiki.revision r
+    from ffwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -2996,7 +2970,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiu_vrowiki' as wiki
-    from metawiki.revision r
+    from fiu_vrowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3009,7 +2983,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwiki' as wiki
-    from metawiki.revision r
+    from fiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3022,7 +2996,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikibooks' as wiki
-    from metawiki.revision r
+    from fiwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3035,7 +3009,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikimedia' as wiki
-    from metawiki.revision r
+    from fiwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3048,7 +3022,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikinews' as wiki
-    from metawiki.revision r
+    from fiwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3061,7 +3035,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikiquote' as wiki
-    from metawiki.revision r
+    from fiwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3074,7 +3048,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikisource' as wiki
-    from metawiki.revision r
+    from fiwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3087,7 +3061,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikiversity' as wiki
-    from metawiki.revision r
+    from fiwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3100,7 +3074,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwikivoyage' as wiki
-    from metawiki.revision r
+    from fiwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3113,7 +3087,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fiwiktionary' as wiki
-    from metawiki.revision r
+    from fiwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3126,7 +3100,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fjwiki' as wiki
-    from metawiki.revision r
+    from fjwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3139,20 +3113,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fjwiktionary' as wiki
-    from metawiki.revision r
-    join awight_meta_wmf_accounts u
-        on r.rev_user_text=u.username
-    group by 1,2;
-
-
--- flowdb (public)
-insert into awight_wiki_edit_counts
-    select
-        u.username as username,
-        left(r.rev_timestamp, 6) as month,
-        count(*) as edit_count,
-        'flowdb' as wiki
-    from metawiki.revision r
+    from fjwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3165,7 +3126,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'foundationwiki' as wiki
-    from metawiki.revision r
+    from foundationwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3178,7 +3139,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fowiki' as wiki
-    from metawiki.revision r
+    from fowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3191,7 +3152,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fowikisource' as wiki
-    from metawiki.revision r
+    from fowikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3204,7 +3165,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fowiktionary' as wiki
-    from metawiki.revision r
+    from fowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3217,7 +3178,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frpwiki' as wiki
-    from metawiki.revision r
+    from frpwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3230,7 +3191,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frrwiki' as wiki
-    from metawiki.revision r
+    from frrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3243,7 +3204,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwiki' as wiki
-    from metawiki.revision r
+    from frwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3256,7 +3217,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikibooks' as wiki
-    from metawiki.revision r
+    from frwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3269,7 +3230,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikinews' as wiki
-    from metawiki.revision r
+    from frwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3282,7 +3243,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikiquote' as wiki
-    from metawiki.revision r
+    from frwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3295,7 +3256,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikisource' as wiki
-    from metawiki.revision r
+    from frwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3308,7 +3269,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikiversity' as wiki
-    from metawiki.revision r
+    from frwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3321,7 +3282,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwikivoyage' as wiki
-    from metawiki.revision r
+    from frwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3334,7 +3295,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'frwiktionary' as wiki
-    from metawiki.revision r
+    from frwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3347,7 +3308,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'furwiki' as wiki
-    from metawiki.revision r
+    from furwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3360,7 +3321,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fywiki' as wiki
-    from metawiki.revision r
+    from fywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3373,7 +3334,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fywikibooks' as wiki
-    from metawiki.revision r
+    from fywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3386,7 +3347,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fywiktionary' as wiki
-    from metawiki.revision r
+    from fywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3399,7 +3360,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gagwiki' as wiki
-    from metawiki.revision r
+    from gagwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3412,7 +3373,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ganwiki' as wiki
-    from metawiki.revision r
+    from ganwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3425,7 +3386,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gawiki' as wiki
-    from metawiki.revision r
+    from gawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3438,7 +3399,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gawikibooks' as wiki
-    from metawiki.revision r
+    from gawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3451,7 +3412,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gawikiquote' as wiki
-    from metawiki.revision r
+    from gawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3464,7 +3425,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gawiktionary' as wiki
-    from metawiki.revision r
+    from gawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3477,7 +3438,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gdwiki' as wiki
-    from metawiki.revision r
+    from gdwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3490,7 +3451,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gdwiktionary' as wiki
-    from metawiki.revision r
+    from gdwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3503,7 +3464,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glkwiki' as wiki
-    from metawiki.revision r
+    from glkwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3516,7 +3477,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glwiki' as wiki
-    from metawiki.revision r
+    from glwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3529,7 +3490,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glwikibooks' as wiki
-    from metawiki.revision r
+    from glwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3542,7 +3503,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glwikiquote' as wiki
-    from metawiki.revision r
+    from glwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3555,7 +3516,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glwikisource' as wiki
-    from metawiki.revision r
+    from glwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3568,7 +3529,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'glwiktionary' as wiki
-    from metawiki.revision r
+    from glwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3581,7 +3542,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gnwiki' as wiki
-    from metawiki.revision r
+    from gnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3594,7 +3555,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gnwikibooks' as wiki
-    from metawiki.revision r
+    from gnwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3607,7 +3568,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gnwiktionary' as wiki
-    from metawiki.revision r
+    from gnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3620,7 +3581,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gomwiki' as wiki
-    from metawiki.revision r
+    from gomwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3633,7 +3594,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gotwiki' as wiki
-    from metawiki.revision r
+    from gotwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3646,7 +3607,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gotwikibooks' as wiki
-    from metawiki.revision r
+    from gotwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3659,7 +3620,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'guwiki' as wiki
-    from metawiki.revision r
+    from guwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3672,7 +3633,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'guwikibooks' as wiki
-    from metawiki.revision r
+    from guwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3685,7 +3646,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'guwikiquote' as wiki
-    from metawiki.revision r
+    from guwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3698,7 +3659,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'guwikisource' as wiki
-    from metawiki.revision r
+    from guwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3711,7 +3672,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'guwiktionary' as wiki
-    from metawiki.revision r
+    from guwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3724,7 +3685,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gvwiki' as wiki
-    from metawiki.revision r
+    from gvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3737,7 +3698,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'gvwiktionary' as wiki
-    from metawiki.revision r
+    from gvwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3750,7 +3711,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hakwiki' as wiki
-    from metawiki.revision r
+    from hakwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3763,7 +3724,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hawiki' as wiki
-    from metawiki.revision r
+    from hawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3776,7 +3737,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hawiktionary' as wiki
-    from metawiki.revision r
+    from hawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3789,7 +3750,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hawwiki' as wiki
-    from metawiki.revision r
+    from hawwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3802,7 +3763,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewiki' as wiki
-    from metawiki.revision r
+    from hewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3815,7 +3776,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewikibooks' as wiki
-    from metawiki.revision r
+    from hewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3828,7 +3789,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewikinews' as wiki
-    from metawiki.revision r
+    from hewikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3841,7 +3802,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewikiquote' as wiki
-    from metawiki.revision r
+    from hewikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3854,7 +3815,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewikisource' as wiki
-    from metawiki.revision r
+    from hewikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3867,7 +3828,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewikivoyage' as wiki
-    from metawiki.revision r
+    from hewikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3880,7 +3841,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hewiktionary' as wiki
-    from metawiki.revision r
+    from hewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3893,7 +3854,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hifwiki' as wiki
-    from metawiki.revision r
+    from hifwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3906,7 +3867,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hiwiki' as wiki
-    from metawiki.revision r
+    from hiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3919,7 +3880,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hiwikibooks' as wiki
-    from metawiki.revision r
+    from hiwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3932,7 +3893,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hiwikiquote' as wiki
-    from metawiki.revision r
+    from hiwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3945,7 +3906,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hiwiktionary' as wiki
-    from metawiki.revision r
+    from hiwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3958,7 +3919,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'howiki' as wiki
-    from metawiki.revision r
+    from howiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3971,7 +3932,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hrwiki' as wiki
-    from metawiki.revision r
+    from hrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3984,7 +3945,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hrwikibooks' as wiki
-    from metawiki.revision r
+    from hrwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -3997,7 +3958,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hrwikiquote' as wiki
-    from metawiki.revision r
+    from hrwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4010,7 +3971,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hrwikisource' as wiki
-    from metawiki.revision r
+    from hrwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4023,7 +3984,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hrwiktionary' as wiki
-    from metawiki.revision r
+    from hrwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4036,7 +3997,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hsbwiki' as wiki
-    from metawiki.revision r
+    from hsbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4049,7 +4010,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hsbwiktionary' as wiki
-    from metawiki.revision r
+    from hsbwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4062,7 +4023,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'htwiki' as wiki
-    from metawiki.revision r
+    from htwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4075,7 +4036,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'htwikisource' as wiki
-    from metawiki.revision r
+    from htwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4088,7 +4049,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwiki' as wiki
-    from metawiki.revision r
+    from huwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4101,7 +4062,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwikibooks' as wiki
-    from metawiki.revision r
+    from huwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4114,7 +4075,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwikinews' as wiki
-    from metawiki.revision r
+    from huwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4127,7 +4088,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwikiquote' as wiki
-    from metawiki.revision r
+    from huwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4140,7 +4101,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwikisource' as wiki
-    from metawiki.revision r
+    from huwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4153,7 +4114,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'huwiktionary' as wiki
-    from metawiki.revision r
+    from huwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4166,7 +4127,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hywiki' as wiki
-    from metawiki.revision r
+    from hywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4179,7 +4140,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hywikibooks' as wiki
-    from metawiki.revision r
+    from hywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4192,7 +4153,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hywikiquote' as wiki
-    from metawiki.revision r
+    from hywikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4205,7 +4166,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hywikisource' as wiki
-    from metawiki.revision r
+    from hywikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4218,7 +4179,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hywiktionary' as wiki
-    from metawiki.revision r
+    from hywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4231,7 +4192,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'hzwiki' as wiki
-    from metawiki.revision r
+    from hzwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4244,7 +4205,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iawiki' as wiki
-    from metawiki.revision r
+    from iawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4257,7 +4218,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iawikibooks' as wiki
-    from metawiki.revision r
+    from iawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4270,7 +4231,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iawiktionary' as wiki
-    from metawiki.revision r
+    from iawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4283,7 +4244,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'idwiki' as wiki
-    from metawiki.revision r
+    from idwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4296,7 +4257,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'idwikibooks' as wiki
-    from metawiki.revision r
+    from idwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4309,7 +4270,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'idwikiquote' as wiki
-    from metawiki.revision r
+    from idwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4322,7 +4283,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'idwikisource' as wiki
-    from metawiki.revision r
+    from idwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4335,7 +4296,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'idwiktionary' as wiki
-    from metawiki.revision r
+    from idwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4348,7 +4309,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iewiki' as wiki
-    from metawiki.revision r
+    from iewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4361,7 +4322,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iewikibooks' as wiki
-    from metawiki.revision r
+    from iewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4374,7 +4335,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iewiktionary' as wiki
-    from metawiki.revision r
+    from iewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4387,7 +4348,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'igwiki' as wiki
-    from metawiki.revision r
+    from igwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4400,7 +4361,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iiwiki' as wiki
-    from metawiki.revision r
+    from iiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4413,7 +4374,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ikwiki' as wiki
-    from metawiki.revision r
+    from ikwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4426,7 +4387,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ikwiktionary' as wiki
-    from metawiki.revision r
+    from ikwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4439,7 +4400,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ilowiki' as wiki
-    from metawiki.revision r
+    from ilowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4452,7 +4413,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'incubatorwiki' as wiki
-    from metawiki.revision r
+    from incubatorwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4465,7 +4426,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'information_schema' as wiki
-    from metawiki.revision r
+    from information_schema.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4478,7 +4439,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iowiki' as wiki
-    from metawiki.revision r
+    from iowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4491,7 +4452,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iowiktionary' as wiki
-    from metawiki.revision r
+    from iowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4504,7 +4465,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iswiki' as wiki
-    from metawiki.revision r
+    from iswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4517,7 +4478,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iswikibooks' as wiki
-    from metawiki.revision r
+    from iswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4530,7 +4491,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iswikiquote' as wiki
-    from metawiki.revision r
+    from iswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4543,7 +4504,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iswikisource' as wiki
-    from metawiki.revision r
+    from iswikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4556,7 +4517,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iswiktionary' as wiki
-    from metawiki.revision r
+    from iswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4569,7 +4530,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwiki' as wiki
-    from metawiki.revision r
+    from itwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4582,7 +4543,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikibooks' as wiki
-    from metawiki.revision r
+    from itwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4595,7 +4556,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikinews' as wiki
-    from metawiki.revision r
+    from itwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4608,7 +4569,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikiquote' as wiki
-    from metawiki.revision r
+    from itwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4621,7 +4582,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikisource' as wiki
-    from metawiki.revision r
+    from itwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4634,7 +4595,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikiversity' as wiki
-    from metawiki.revision r
+    from itwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4647,7 +4608,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwikivoyage' as wiki
-    from metawiki.revision r
+    from itwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4660,7 +4621,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'itwiktionary' as wiki
-    from metawiki.revision r
+    from itwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4673,7 +4634,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iuwiki' as wiki
-    from metawiki.revision r
+    from iuwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4686,7 +4647,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iuwiktionary' as wiki
-    from metawiki.revision r
+    from iuwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4699,7 +4660,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jamwiki' as wiki
-    from metawiki.revision r
+    from jamwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4712,7 +4673,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawiki' as wiki
-    from metawiki.revision r
+    from jawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4725,7 +4686,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawikibooks' as wiki
-    from metawiki.revision r
+    from jawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4738,7 +4699,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawikinews' as wiki
-    from metawiki.revision r
+    from jawikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4751,7 +4712,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawikiquote' as wiki
-    from metawiki.revision r
+    from jawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4764,7 +4725,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawikisource' as wiki
-    from metawiki.revision r
+    from jawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4777,7 +4738,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawikiversity' as wiki
-    from metawiki.revision r
+    from jawikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4790,7 +4751,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jawiktionary' as wiki
-    from metawiki.revision r
+    from jawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4803,7 +4764,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jbowiki' as wiki
-    from metawiki.revision r
+    from jbowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4816,7 +4777,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jbowiktionary' as wiki
-    from metawiki.revision r
+    from jbowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4829,7 +4790,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jvwiki' as wiki
-    from metawiki.revision r
+    from jvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4842,7 +4803,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'jvwiktionary' as wiki
-    from metawiki.revision r
+    from jvwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4855,7 +4816,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kaawiki' as wiki
-    from metawiki.revision r
+    from kaawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4868,7 +4829,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kabwiki' as wiki
-    from metawiki.revision r
+    from kabwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4881,7 +4842,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kawiki' as wiki
-    from metawiki.revision r
+    from kawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4894,7 +4855,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kawikibooks' as wiki
-    from metawiki.revision r
+    from kawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4907,7 +4868,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kawikiquote' as wiki
-    from metawiki.revision r
+    from kawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4920,7 +4881,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kawiktionary' as wiki
-    from metawiki.revision r
+    from kawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4933,7 +4894,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kbdwiki' as wiki
-    from metawiki.revision r
+    from kbdwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4946,7 +4907,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kgwiki' as wiki
-    from metawiki.revision r
+    from kgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4959,7 +4920,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kiwiki' as wiki
-    from metawiki.revision r
+    from kiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4972,7 +4933,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kjwiki' as wiki
-    from metawiki.revision r
+    from kjwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4985,7 +4946,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kkwiki' as wiki
-    from metawiki.revision r
+    from kkwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -4998,7 +4959,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kkwikibooks' as wiki
-    from metawiki.revision r
+    from kkwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5011,7 +4972,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kkwikiquote' as wiki
-    from metawiki.revision r
+    from kkwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5024,7 +4985,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kkwiktionary' as wiki
-    from metawiki.revision r
+    from kkwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5037,7 +4998,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'klwiki' as wiki
-    from metawiki.revision r
+    from klwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5050,7 +5011,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'klwiktionary' as wiki
-    from metawiki.revision r
+    from klwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5063,7 +5024,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kmwiki' as wiki
-    from metawiki.revision r
+    from kmwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5076,7 +5037,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kmwikibooks' as wiki
-    from metawiki.revision r
+    from kmwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5089,7 +5050,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kmwiktionary' as wiki
-    from metawiki.revision r
+    from kmwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5102,7 +5063,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'knwiki' as wiki
-    from metawiki.revision r
+    from knwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5115,7 +5076,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'knwikibooks' as wiki
-    from metawiki.revision r
+    from knwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5128,7 +5089,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'knwikiquote' as wiki
-    from metawiki.revision r
+    from knwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5141,7 +5102,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'knwikisource' as wiki
-    from metawiki.revision r
+    from knwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5154,7 +5115,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'knwiktionary' as wiki
-    from metawiki.revision r
+    from knwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5167,7 +5128,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'koiwiki' as wiki
-    from metawiki.revision r
+    from koiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5180,7 +5141,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowiki' as wiki
-    from metawiki.revision r
+    from kowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5193,7 +5154,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowikibooks' as wiki
-    from metawiki.revision r
+    from kowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5206,7 +5167,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowikinews' as wiki
-    from metawiki.revision r
+    from kowikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5219,7 +5180,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowikiquote' as wiki
-    from metawiki.revision r
+    from kowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5232,7 +5193,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowikisource' as wiki
-    from metawiki.revision r
+    from kowikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5245,7 +5206,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowikiversity' as wiki
-    from metawiki.revision r
+    from kowikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5258,7 +5219,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kowiktionary' as wiki
-    from metawiki.revision r
+    from kowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5271,7 +5232,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'krcwiki' as wiki
-    from metawiki.revision r
+    from krcwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5284,7 +5245,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'krwiki' as wiki
-    from metawiki.revision r
+    from krwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5297,7 +5258,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'krwikiquote' as wiki
-    from metawiki.revision r
+    from krwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5310,7 +5271,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kshwiki' as wiki
-    from metawiki.revision r
+    from kshwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5323,7 +5284,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kswiki' as wiki
-    from metawiki.revision r
+    from kswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5336,7 +5297,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kswikibooks' as wiki
-    from metawiki.revision r
+    from kswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5349,7 +5310,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kswikiquote' as wiki
-    from metawiki.revision r
+    from kswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5362,7 +5323,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kswiktionary' as wiki
-    from metawiki.revision r
+    from kswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5375,7 +5336,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kuwiki' as wiki
-    from metawiki.revision r
+    from kuwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5388,7 +5349,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kuwikibooks' as wiki
-    from metawiki.revision r
+    from kuwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5401,7 +5362,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kuwikiquote' as wiki
-    from metawiki.revision r
+    from kuwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5414,7 +5375,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kuwiktionary' as wiki
-    from metawiki.revision r
+    from kuwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5427,7 +5388,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kvwiki' as wiki
-    from metawiki.revision r
+    from kvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5440,7 +5401,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kwwiki' as wiki
-    from metawiki.revision r
+    from kwwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5453,7 +5414,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kwwikiquote' as wiki
-    from metawiki.revision r
+    from kwwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5466,7 +5427,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kwwiktionary' as wiki
-    from metawiki.revision r
+    from kwwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5479,7 +5440,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kywiki' as wiki
-    from metawiki.revision r
+    from kywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5492,7 +5453,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kywikibooks' as wiki
-    from metawiki.revision r
+    from kywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5505,7 +5466,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kywikiquote' as wiki
-    from metawiki.revision r
+    from kywikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5518,7 +5479,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'kywiktionary' as wiki
-    from metawiki.revision r
+    from kywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5531,7 +5492,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ladwiki' as wiki
-    from metawiki.revision r
+    from ladwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5544,7 +5505,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lawiki' as wiki
-    from metawiki.revision r
+    from lawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5557,7 +5518,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lawikibooks' as wiki
-    from metawiki.revision r
+    from lawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5570,7 +5531,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lawikiquote' as wiki
-    from metawiki.revision r
+    from lawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5583,7 +5544,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lawikisource' as wiki
-    from metawiki.revision r
+    from lawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5596,7 +5557,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lawiktionary' as wiki
-    from metawiki.revision r
+    from lawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5609,7 +5570,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lbewiki' as wiki
-    from metawiki.revision r
+    from lbewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5622,7 +5583,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lbwiki' as wiki
-    from metawiki.revision r
+    from lbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5635,7 +5596,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lbwikibooks' as wiki
-    from metawiki.revision r
+    from lbwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5648,7 +5609,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lbwikiquote' as wiki
-    from metawiki.revision r
+    from lbwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5661,7 +5622,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lbwiktionary' as wiki
-    from metawiki.revision r
+    from lbwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5674,7 +5635,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lezwiki' as wiki
-    from metawiki.revision r
+    from lezwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5687,7 +5648,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lgwiki' as wiki
-    from metawiki.revision r
+    from lgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5700,7 +5661,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lijwiki' as wiki
-    from metawiki.revision r
+    from lijwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5713,7 +5674,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'liwiki' as wiki
-    from metawiki.revision r
+    from liwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5726,7 +5687,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'liwikibooks' as wiki
-    from metawiki.revision r
+    from liwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5739,7 +5700,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'liwikiquote' as wiki
-    from metawiki.revision r
+    from liwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5752,7 +5713,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'liwikisource' as wiki
-    from metawiki.revision r
+    from liwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5765,7 +5726,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'liwiktionary' as wiki
-    from metawiki.revision r
+    from liwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5778,7 +5739,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lmowiki' as wiki
-    from metawiki.revision r
+    from lmowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5791,7 +5752,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lnwiki' as wiki
-    from metawiki.revision r
+    from lnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5804,7 +5765,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lnwikibooks' as wiki
-    from metawiki.revision r
+    from lnwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5817,7 +5778,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lnwiktionary' as wiki
-    from metawiki.revision r
+    from lnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5830,7 +5791,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'log' as wiki
-    from metawiki.revision r
+    from log.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5843,7 +5804,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'loginwiki' as wiki
-    from metawiki.revision r
+    from loginwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5856,7 +5817,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lowiki' as wiki
-    from metawiki.revision r
+    from lowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5869,7 +5830,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lowiktionary' as wiki
-    from metawiki.revision r
+    from lowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5882,7 +5843,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lrcwiki' as wiki
-    from metawiki.revision r
+    from lrcwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5895,7 +5856,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltgwiki' as wiki
-    from metawiki.revision r
+    from ltgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5908,7 +5869,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltwiki' as wiki
-    from metawiki.revision r
+    from ltwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5921,7 +5882,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltwikibooks' as wiki
-    from metawiki.revision r
+    from ltwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5934,7 +5895,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltwikiquote' as wiki
-    from metawiki.revision r
+    from ltwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5947,7 +5908,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltwikisource' as wiki
-    from metawiki.revision r
+    from ltwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5960,7 +5921,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ltwiktionary' as wiki
-    from metawiki.revision r
+    from ltwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5973,7 +5934,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lvwiki' as wiki
-    from metawiki.revision r
+    from lvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5986,7 +5947,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lvwikibooks' as wiki
-    from metawiki.revision r
+    from lvwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -5999,7 +5960,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'lvwiktionary' as wiki
-    from metawiki.revision r
+    from lvwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6012,7 +5973,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'maiwiki' as wiki
-    from metawiki.revision r
+    from maiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6025,7 +5986,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'map_bmswiki' as wiki
-    from metawiki.revision r
+    from map_bmswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6038,7 +5999,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mdfwiki' as wiki
-    from metawiki.revision r
+    from mdfwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6051,7 +6012,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mediawikiwiki' as wiki
-    from metawiki.revision r
+    from mediawikiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6077,7 +6038,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mgwiki' as wiki
-    from metawiki.revision r
+    from mgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6090,7 +6051,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mgwikibooks' as wiki
-    from metawiki.revision r
+    from mgwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6103,7 +6064,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mgwiktionary' as wiki
-    from metawiki.revision r
+    from mgwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6116,7 +6077,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mhrwiki' as wiki
-    from metawiki.revision r
+    from mhrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6129,7 +6090,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mhwiki' as wiki
-    from metawiki.revision r
+    from mhwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6142,7 +6103,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mhwiktionary' as wiki
-    from metawiki.revision r
+    from mhwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6155,7 +6116,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'minwiki' as wiki
-    from metawiki.revision r
+    from minwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6168,7 +6129,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'miwiki' as wiki
-    from metawiki.revision r
+    from miwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6181,7 +6142,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'miwikibooks' as wiki
-    from metawiki.revision r
+    from miwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6194,7 +6155,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'miwiktionary' as wiki
-    from metawiki.revision r
+    from miwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6207,7 +6168,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mkwiki' as wiki
-    from metawiki.revision r
+    from mkwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6220,7 +6181,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mkwikibooks' as wiki
-    from metawiki.revision r
+    from mkwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6233,7 +6194,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mkwikimedia' as wiki
-    from metawiki.revision r
+    from mkwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6246,7 +6207,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mkwikisource' as wiki
-    from metawiki.revision r
+    from mkwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6259,7 +6220,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mkwiktionary' as wiki
-    from metawiki.revision r
+    from mkwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6272,7 +6233,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mlwiki' as wiki
-    from metawiki.revision r
+    from mlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6285,7 +6246,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mlwikibooks' as wiki
-    from metawiki.revision r
+    from mlwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6298,7 +6259,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mlwikiquote' as wiki
-    from metawiki.revision r
+    from mlwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6311,7 +6272,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mlwikisource' as wiki
-    from metawiki.revision r
+    from mlwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6324,7 +6285,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mlwiktionary' as wiki
-    from metawiki.revision r
+    from mlwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6337,7 +6298,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mnwiki' as wiki
-    from metawiki.revision r
+    from mnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6350,7 +6311,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mnwikibooks' as wiki
-    from metawiki.revision r
+    from mnwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6363,7 +6324,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mnwiktionary' as wiki
-    from metawiki.revision r
+    from mnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6376,7 +6337,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mowiki' as wiki
-    from metawiki.revision r
+    from mowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6389,7 +6350,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mowiktionary' as wiki
-    from metawiki.revision r
+    from mowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6402,7 +6363,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrjwiki' as wiki
-    from metawiki.revision r
+    from mrjwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6415,7 +6376,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrwiki' as wiki
-    from metawiki.revision r
+    from mrwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6428,7 +6389,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrwikibooks' as wiki
-    from metawiki.revision r
+    from mrwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6441,7 +6402,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrwikiquote' as wiki
-    from metawiki.revision r
+    from mrwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6454,7 +6415,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrwikisource' as wiki
-    from metawiki.revision r
+    from mrwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6467,7 +6428,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mrwiktionary' as wiki
-    from metawiki.revision r
+    from mrwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6480,7 +6441,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mswiki' as wiki
-    from metawiki.revision r
+    from mswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6493,7 +6454,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mswikibooks' as wiki
-    from metawiki.revision r
+    from mswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6506,7 +6467,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mswiktionary' as wiki
-    from metawiki.revision r
+    from mswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6519,7 +6480,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mtwiki' as wiki
-    from metawiki.revision r
+    from mtwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6532,7 +6493,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mtwiktionary' as wiki
-    from metawiki.revision r
+    from mtwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6545,7 +6506,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'muswiki' as wiki
-    from metawiki.revision r
+    from muswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6558,7 +6519,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mwlwiki' as wiki
-    from metawiki.revision r
+    from mwlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6571,7 +6532,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mxwikimedia' as wiki
-    from metawiki.revision r
+    from mxwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6584,7 +6545,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'myvwiki' as wiki
-    from metawiki.revision r
+    from myvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6597,7 +6558,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mywiki' as wiki
-    from metawiki.revision r
+    from mywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6610,7 +6571,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mywikibooks' as wiki
-    from metawiki.revision r
+    from mywikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6623,7 +6584,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mywiktionary' as wiki
-    from metawiki.revision r
+    from mywiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6636,7 +6597,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'mznwiki' as wiki
-    from metawiki.revision r
+    from mznwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6649,7 +6610,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nahwiki' as wiki
-    from metawiki.revision r
+    from nahwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6662,7 +6623,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nahwikibooks' as wiki
-    from metawiki.revision r
+    from nahwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6675,7 +6636,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nahwiktionary' as wiki
-    from metawiki.revision r
+    from nahwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6688,7 +6649,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'napwiki' as wiki
-    from metawiki.revision r
+    from napwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6701,7 +6662,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nawiki' as wiki
-    from metawiki.revision r
+    from nawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6714,7 +6675,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nawikibooks' as wiki
-    from metawiki.revision r
+    from nawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6727,7 +6688,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nawikiquote' as wiki
-    from metawiki.revision r
+    from nawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6740,7 +6701,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nawiktionary' as wiki
-    from metawiki.revision r
+    from nawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6753,7 +6714,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nds_nlwiki' as wiki
-    from metawiki.revision r
+    from nds_nlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6766,7 +6727,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ndswiki' as wiki
-    from metawiki.revision r
+    from ndswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6779,7 +6740,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ndswikibooks' as wiki
-    from metawiki.revision r
+    from ndswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6792,7 +6753,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ndswikiquote' as wiki
-    from metawiki.revision r
+    from ndswikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6805,7 +6766,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ndswiktionary' as wiki
-    from metawiki.revision r
+    from ndswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6818,7 +6779,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'newiki' as wiki
-    from metawiki.revision r
+    from newiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6831,7 +6792,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'newikibooks' as wiki
-    from metawiki.revision r
+    from newikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6844,7 +6805,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'newiktionary' as wiki
-    from metawiki.revision r
+    from newiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6857,7 +6818,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'newwiki' as wiki
-    from metawiki.revision r
+    from newwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6870,7 +6831,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ngwiki' as wiki
-    from metawiki.revision r
+    from ngwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6883,7 +6844,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwiki' as wiki
-    from metawiki.revision r
+    from nlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6896,7 +6857,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikibooks' as wiki
-    from metawiki.revision r
+    from nlwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6909,7 +6870,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikimedia' as wiki
-    from metawiki.revision r
+    from nlwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6922,7 +6883,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikinews' as wiki
-    from metawiki.revision r
+    from nlwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6935,7 +6896,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikiquote' as wiki
-    from metawiki.revision r
+    from nlwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6948,7 +6909,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikisource' as wiki
-    from metawiki.revision r
+    from nlwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6961,7 +6922,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwikivoyage' as wiki
-    from metawiki.revision r
+    from nlwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6974,7 +6935,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nlwiktionary' as wiki
-    from metawiki.revision r
+    from nlwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -6987,7 +6948,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nnwiki' as wiki
-    from metawiki.revision r
+    from nnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7000,7 +6961,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nnwikiquote' as wiki
-    from metawiki.revision r
+    from nnwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7013,7 +6974,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nnwiktionary' as wiki
-    from metawiki.revision r
+    from nnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7026,7 +6987,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nostalgiawiki' as wiki
-    from metawiki.revision r
+    from nostalgiawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7039,7 +7000,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'novwiki' as wiki
-    from metawiki.revision r
+    from novwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7052,7 +7013,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowiki' as wiki
-    from metawiki.revision r
+    from nowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7065,7 +7026,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowikibooks' as wiki
-    from metawiki.revision r
+    from nowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7078,7 +7039,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowikimedia' as wiki
-    from metawiki.revision r
+    from nowikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7091,7 +7052,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowikinews' as wiki
-    from metawiki.revision r
+    from nowikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7104,7 +7065,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowikiquote' as wiki
-    from metawiki.revision r
+    from nowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7117,7 +7078,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowikisource' as wiki
-    from metawiki.revision r
+    from nowikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7130,7 +7091,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nowiktionary' as wiki
-    from metawiki.revision r
+    from nowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7143,7 +7104,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nrmwiki' as wiki
-    from metawiki.revision r
+    from nrmwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7156,7 +7117,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nsowiki' as wiki
-    from metawiki.revision r
+    from nsowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7169,7 +7130,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nvwiki' as wiki
-    from metawiki.revision r
+    from nvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7182,7 +7143,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nycwikimedia' as wiki
-    from metawiki.revision r
+    from nycwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7195,7 +7156,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nywiki' as wiki
-    from metawiki.revision r
+    from nywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7208,7 +7169,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'nzwikimedia' as wiki
-    from metawiki.revision r
+    from nzwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7221,7 +7182,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ocwiki' as wiki
-    from metawiki.revision r
+    from ocwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7234,7 +7195,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ocwikibooks' as wiki
-    from metawiki.revision r
+    from ocwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7247,7 +7208,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ocwiktionary' as wiki
-    from metawiki.revision r
+    from ocwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7260,7 +7221,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'olowiki' as wiki
-    from metawiki.revision r
+    from olowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7273,7 +7234,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'omwiki' as wiki
-    from metawiki.revision r
+    from omwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7286,7 +7247,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'omwiktionary' as wiki
-    from metawiki.revision r
+    from omwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7299,7 +7260,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'orwiki' as wiki
-    from metawiki.revision r
+    from orwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7312,7 +7273,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'orwikisource' as wiki
-    from metawiki.revision r
+    from orwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7325,7 +7286,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'orwiktionary' as wiki
-    from metawiki.revision r
+    from orwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7338,7 +7299,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'oswiki' as wiki
-    from metawiki.revision r
+    from oswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7351,7 +7312,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'outreachwiki' as wiki
-    from metawiki.revision r
+    from outreachwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7364,7 +7325,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pa_uswikimedia' as wiki
-    from metawiki.revision r
+    from pa_uswikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7377,7 +7338,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pagwiki' as wiki
-    from metawiki.revision r
+    from pagwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7390,7 +7351,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pamwiki' as wiki
-    from metawiki.revision r
+    from pamwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7403,7 +7364,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'papwiki' as wiki
-    from metawiki.revision r
+    from papwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7416,7 +7377,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pawiki' as wiki
-    from metawiki.revision r
+    from pawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7429,7 +7390,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pawikibooks' as wiki
-    from metawiki.revision r
+    from pawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7442,7 +7403,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pawiktionary' as wiki
-    from metawiki.revision r
+    from pawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7455,7 +7416,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pcdwiki' as wiki
-    from metawiki.revision r
+    from pcdwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7468,7 +7429,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pdcwiki' as wiki
-    from metawiki.revision r
+    from pdcwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7481,7 +7442,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pflwiki' as wiki
-    from metawiki.revision r
+    from pflwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7494,7 +7455,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pihwiki' as wiki
-    from metawiki.revision r
+    from pihwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7507,7 +7468,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'piwiki' as wiki
-    from metawiki.revision r
+    from piwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7520,7 +7481,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'piwiktionary' as wiki
-    from metawiki.revision r
+    from piwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7533,7 +7494,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwiki' as wiki
-    from metawiki.revision r
+    from plwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7546,7 +7507,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikibooks' as wiki
-    from metawiki.revision r
+    from plwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7559,7 +7520,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikimedia' as wiki
-    from metawiki.revision r
+    from plwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7572,7 +7533,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikinews' as wiki
-    from metawiki.revision r
+    from plwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7585,7 +7546,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikiquote' as wiki
-    from metawiki.revision r
+    from plwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7598,7 +7559,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikisource' as wiki
-    from metawiki.revision r
+    from plwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7611,7 +7572,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwikivoyage' as wiki
-    from metawiki.revision r
+    from plwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7624,7 +7585,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'plwiktionary' as wiki
-    from metawiki.revision r
+    from plwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7637,7 +7598,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pmswiki' as wiki
-    from metawiki.revision r
+    from pmswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7650,7 +7611,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pnbwiki' as wiki
-    from metawiki.revision r
+    from pnbwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7663,7 +7624,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pnbwiktionary' as wiki
-    from metawiki.revision r
+    from pnbwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7676,7 +7637,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pntwiki' as wiki
-    from metawiki.revision r
+    from pntwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7689,7 +7650,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'project_illustration' as wiki
-    from metawiki.revision r
+    from project_illustration.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7702,7 +7663,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pswiki' as wiki
-    from metawiki.revision r
+    from pswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7715,7 +7676,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pswikibooks' as wiki
-    from metawiki.revision r
+    from pswikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7728,7 +7689,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'pswiktionary' as wiki
-    from metawiki.revision r
+    from pswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7741,7 +7702,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwiki' as wiki
-    from metawiki.revision r
+    from ptwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7754,7 +7715,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikibooks' as wiki
-    from metawiki.revision r
+    from ptwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7767,7 +7728,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikinews' as wiki
-    from metawiki.revision r
+    from ptwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7780,7 +7741,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikiquote' as wiki
-    from metawiki.revision r
+    from ptwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7793,7 +7754,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikisource' as wiki
-    from metawiki.revision r
+    from ptwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7806,7 +7767,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikiversity' as wiki
-    from metawiki.revision r
+    from ptwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7819,7 +7780,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwikivoyage' as wiki
-    from metawiki.revision r
+    from ptwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7832,7 +7793,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ptwiktionary' as wiki
-    from metawiki.revision r
+    from ptwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7845,7 +7806,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'qualitywiki' as wiki
-    from metawiki.revision r
+    from qualitywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7858,7 +7819,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'quwiki' as wiki
-    from metawiki.revision r
+    from quwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7871,7 +7832,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'quwikibooks' as wiki
-    from metawiki.revision r
+    from quwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7884,7 +7845,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'quwikiquote' as wiki
-    from metawiki.revision r
+    from quwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7897,7 +7858,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'quwiktionary' as wiki
-    from metawiki.revision r
+    from quwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7910,7 +7871,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rmwiki' as wiki
-    from metawiki.revision r
+    from rmwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7923,7 +7884,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rmwikibooks' as wiki
-    from metawiki.revision r
+    from rmwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7936,7 +7897,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rmwiktionary' as wiki
-    from metawiki.revision r
+    from rmwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7949,7 +7910,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rmywiki' as wiki
-    from metawiki.revision r
+    from rmywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7962,7 +7923,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rnwiki' as wiki
-    from metawiki.revision r
+    from rnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7975,7 +7936,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rnwiktionary' as wiki
-    from metawiki.revision r
+    from rnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -7988,7 +7949,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'roa_rupwiki' as wiki
-    from metawiki.revision r
+    from roa_rupwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8001,7 +7962,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'roa_rupwiktionary' as wiki
-    from metawiki.revision r
+    from roa_rupwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8014,7 +7975,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'roa_tarawiki' as wiki
-    from metawiki.revision r
+    from roa_tarawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8027,7 +7988,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowiki' as wiki
-    from metawiki.revision r
+    from rowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8040,7 +8001,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowikibooks' as wiki
-    from metawiki.revision r
+    from rowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8053,7 +8014,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowikinews' as wiki
-    from metawiki.revision r
+    from rowikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8066,7 +8027,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowikiquote' as wiki
-    from metawiki.revision r
+    from rowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8079,7 +8040,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowikisource' as wiki
-    from metawiki.revision r
+    from rowikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8092,7 +8053,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowikivoyage' as wiki
-    from metawiki.revision r
+    from rowikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8105,7 +8066,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rowiktionary' as wiki
-    from metawiki.revision r
+    from rowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8118,7 +8079,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rswikimedia' as wiki
-    from metawiki.revision r
+    from rswikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8131,7 +8092,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruewiki' as wiki
-    from metawiki.revision r
+    from ruewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8144,7 +8105,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwiki' as wiki
-    from metawiki.revision r
+    from ruwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8157,7 +8118,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikibooks' as wiki
-    from metawiki.revision r
+    from ruwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8170,7 +8131,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikimedia' as wiki
-    from metawiki.revision r
+    from ruwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8183,7 +8144,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikinews' as wiki
-    from metawiki.revision r
+    from ruwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8196,7 +8157,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikiquote' as wiki
-    from metawiki.revision r
+    from ruwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8209,7 +8170,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikisource' as wiki
-    from metawiki.revision r
+    from ruwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8222,7 +8183,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikiversity' as wiki
-    from metawiki.revision r
+    from ruwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8235,7 +8196,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwikivoyage' as wiki
-    from metawiki.revision r
+    from ruwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8248,7 +8209,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ruwiktionary' as wiki
-    from metawiki.revision r
+    from ruwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8261,7 +8222,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rwwiki' as wiki
-    from metawiki.revision r
+    from rwwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8274,7 +8235,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'rwwiktionary' as wiki
-    from metawiki.revision r
+    from rwwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8287,7 +8248,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sahwiki' as wiki
-    from metawiki.revision r
+    from sahwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8300,7 +8261,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sahwikisource' as wiki
-    from metawiki.revision r
+    from sahwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8313,7 +8274,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sawiki' as wiki
-    from metawiki.revision r
+    from sawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8326,7 +8287,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sawikibooks' as wiki
-    from metawiki.revision r
+    from sawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8339,7 +8300,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sawikiquote' as wiki
-    from metawiki.revision r
+    from sawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8352,7 +8313,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sawikisource' as wiki
-    from metawiki.revision r
+    from sawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8365,7 +8326,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sawiktionary' as wiki
-    from metawiki.revision r
+    from sawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8378,7 +8339,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'scnwiki' as wiki
-    from metawiki.revision r
+    from scnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8391,7 +8352,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'scnwiktionary' as wiki
-    from metawiki.revision r
+    from scnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8404,7 +8365,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'scowiki' as wiki
-    from metawiki.revision r
+    from scowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8417,7 +8378,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'scwiki' as wiki
-    from metawiki.revision r
+    from scwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8430,7 +8391,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'scwiktionary' as wiki
-    from metawiki.revision r
+    from scwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8443,7 +8404,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sdwiki' as wiki
-    from metawiki.revision r
+    from sdwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8456,7 +8417,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sdwikinews' as wiki
-    from metawiki.revision r
+    from sdwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8469,7 +8430,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sdwiktionary' as wiki
-    from metawiki.revision r
+    from sdwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8482,7 +8443,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sewiki' as wiki
-    from metawiki.revision r
+    from sewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8495,7 +8456,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sewikibooks' as wiki
-    from metawiki.revision r
+    from sewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8508,7 +8469,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sewikimedia' as wiki
-    from metawiki.revision r
+    from sewikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8521,7 +8482,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sgwiki' as wiki
-    from metawiki.revision r
+    from sgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8534,7 +8495,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sgwiktionary' as wiki
-    from metawiki.revision r
+    from sgwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8547,7 +8508,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'shwiki' as wiki
-    from metawiki.revision r
+    from shwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8560,7 +8521,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'shwiktionary' as wiki
-    from metawiki.revision r
+    from shwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8573,7 +8534,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'simplewiki' as wiki
-    from metawiki.revision r
+    from simplewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8586,7 +8547,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'simplewikibooks' as wiki
-    from metawiki.revision r
+    from simplewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8599,7 +8560,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'simplewikiquote' as wiki
-    from metawiki.revision r
+    from simplewikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8612,7 +8573,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'simplewiktionary' as wiki
-    from metawiki.revision r
+    from simplewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8625,7 +8586,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'siwiki' as wiki
-    from metawiki.revision r
+    from siwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8638,7 +8599,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'siwikibooks' as wiki
-    from metawiki.revision r
+    from siwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8651,7 +8612,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'siwiktionary' as wiki
-    from metawiki.revision r
+    from siwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8664,7 +8625,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'skwiki' as wiki
-    from metawiki.revision r
+    from skwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8677,7 +8638,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'skwikibooks' as wiki
-    from metawiki.revision r
+    from skwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8690,7 +8651,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'skwikiquote' as wiki
-    from metawiki.revision r
+    from skwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8703,7 +8664,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'skwikisource' as wiki
-    from metawiki.revision r
+    from skwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8716,7 +8677,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'skwiktionary' as wiki
-    from metawiki.revision r
+    from skwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8729,7 +8690,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwiki' as wiki
-    from metawiki.revision r
+    from slwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8742,7 +8703,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwikibooks' as wiki
-    from metawiki.revision r
+    from slwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8755,7 +8716,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwikiquote' as wiki
-    from metawiki.revision r
+    from slwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8768,7 +8729,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwikisource' as wiki
-    from metawiki.revision r
+    from slwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8781,7 +8742,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwikiversity' as wiki
-    from metawiki.revision r
+    from slwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8794,7 +8755,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'slwiktionary' as wiki
-    from metawiki.revision r
+    from slwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8807,7 +8768,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'smwiki' as wiki
-    from metawiki.revision r
+    from smwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8820,7 +8781,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'smwiktionary' as wiki
-    from metawiki.revision r
+    from smwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8833,7 +8794,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'snwiki' as wiki
-    from metawiki.revision r
+    from snwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8846,7 +8807,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'snwiktionary' as wiki
-    from metawiki.revision r
+    from snwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8859,7 +8820,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sourceswiki' as wiki
-    from metawiki.revision r
+    from sourceswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8872,7 +8833,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sowiki' as wiki
-    from metawiki.revision r
+    from sowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8885,7 +8846,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sowiktionary' as wiki
-    from metawiki.revision r
+    from sowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8898,7 +8859,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'specieswiki' as wiki
-    from metawiki.revision r
+    from specieswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8911,7 +8872,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sqwiki' as wiki
-    from metawiki.revision r
+    from sqwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8924,7 +8885,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sqwikibooks' as wiki
-    from metawiki.revision r
+    from sqwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8937,7 +8898,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sqwikinews' as wiki
-    from metawiki.revision r
+    from sqwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8950,7 +8911,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sqwikiquote' as wiki
-    from metawiki.revision r
+    from sqwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8963,7 +8924,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sqwiktionary' as wiki
-    from metawiki.revision r
+    from sqwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8976,7 +8937,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srnwiki' as wiki
-    from metawiki.revision r
+    from srnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -8989,7 +8950,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwiki' as wiki
-    from metawiki.revision r
+    from srwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9002,7 +8963,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwikibooks' as wiki
-    from metawiki.revision r
+    from srwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9015,7 +8976,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwikinews' as wiki
-    from metawiki.revision r
+    from srwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9028,7 +8989,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwikiquote' as wiki
-    from metawiki.revision r
+    from srwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9041,7 +9002,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwikisource' as wiki
-    from metawiki.revision r
+    from srwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9054,7 +9015,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'srwiktionary' as wiki
-    from metawiki.revision r
+    from srwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9067,7 +9028,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sswiki' as wiki
-    from metawiki.revision r
+    from sswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9080,7 +9041,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'sswiktionary' as wiki
-    from metawiki.revision r
+    from sswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9093,7 +9054,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'staging' as wiki
-    from metawiki.revision r
+    from staging.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9106,7 +9067,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'stqwiki' as wiki
-    from metawiki.revision r
+    from stqwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9119,7 +9080,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'strategywiki' as wiki
-    from metawiki.revision r
+    from strategywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9132,7 +9093,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'stwiki' as wiki
-    from metawiki.revision r
+    from stwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9145,7 +9106,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'stwiktionary' as wiki
-    from metawiki.revision r
+    from stwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9158,7 +9119,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'suwiki' as wiki
-    from metawiki.revision r
+    from suwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9171,7 +9132,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'suwikibooks' as wiki
-    from metawiki.revision r
+    from suwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9184,7 +9145,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'suwikiquote' as wiki
-    from metawiki.revision r
+    from suwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9197,7 +9158,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'suwiktionary' as wiki
-    from metawiki.revision r
+    from suwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9210,7 +9171,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwiki' as wiki
-    from metawiki.revision r
+    from svwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9223,7 +9184,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikibooks' as wiki
-    from metawiki.revision r
+    from svwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9236,7 +9197,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikinews' as wiki
-    from metawiki.revision r
+    from svwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9249,7 +9210,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikiquote' as wiki
-    from metawiki.revision r
+    from svwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9262,7 +9223,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikisource' as wiki
-    from metawiki.revision r
+    from svwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9275,7 +9236,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikiversity' as wiki
-    from metawiki.revision r
+    from svwikiversity.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9288,7 +9249,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwikivoyage' as wiki
-    from metawiki.revision r
+    from svwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9301,7 +9262,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'svwiktionary' as wiki
-    from metawiki.revision r
+    from svwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9314,7 +9275,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'swwiki' as wiki
-    from metawiki.revision r
+    from swwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9327,7 +9288,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'swwikibooks' as wiki
-    from metawiki.revision r
+    from swwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9340,7 +9301,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'swwiktionary' as wiki
-    from metawiki.revision r
+    from swwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9353,7 +9314,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'szlwiki' as wiki
-    from metawiki.revision r
+    from szlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9366,7 +9327,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawiki' as wiki
-    from metawiki.revision r
+    from tawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9379,7 +9340,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawikibooks' as wiki
-    from metawiki.revision r
+    from tawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9392,7 +9353,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawikinews' as wiki
-    from metawiki.revision r
+    from tawikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9405,7 +9366,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawikiquote' as wiki
-    from metawiki.revision r
+    from tawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9418,7 +9379,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawikisource' as wiki
-    from metawiki.revision r
+    from tawikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9431,7 +9392,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tawiktionary' as wiki
-    from metawiki.revision r
+    from tawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9444,7 +9405,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tcywiki' as wiki
-    from metawiki.revision r
+    from tcywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9457,7 +9418,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tenwiki' as wiki
-    from metawiki.revision r
+    from tenwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9470,7 +9431,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'test' as wiki
-    from metawiki.revision r
+    from test.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9483,7 +9444,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'test2wiki' as wiki
-    from metawiki.revision r
+    from test2wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9496,7 +9457,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'testwiki' as wiki
-    from metawiki.revision r
+    from testwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9509,7 +9470,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'testwikidatawiki' as wiki
-    from metawiki.revision r
+    from testwikidatawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9522,7 +9483,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tetwiki' as wiki
-    from metawiki.revision r
+    from tetwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9535,7 +9496,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tewiki' as wiki
-    from metawiki.revision r
+    from tewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9548,7 +9509,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tewikibooks' as wiki
-    from metawiki.revision r
+    from tewikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9561,7 +9522,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tewikiquote' as wiki
-    from metawiki.revision r
+    from tewikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9574,7 +9535,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tewikisource' as wiki
-    from metawiki.revision r
+    from tewikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9587,7 +9548,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tewiktionary' as wiki
-    from metawiki.revision r
+    from tewiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9600,7 +9561,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tgwiki' as wiki
-    from metawiki.revision r
+    from tgwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9613,7 +9574,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tgwikibooks' as wiki
-    from metawiki.revision r
+    from tgwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9626,7 +9587,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tgwiktionary' as wiki
-    from metawiki.revision r
+    from tgwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9639,7 +9600,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwiki' as wiki
-    from metawiki.revision r
+    from thwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9652,7 +9613,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwikibooks' as wiki
-    from metawiki.revision r
+    from thwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9665,7 +9626,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwikinews' as wiki
-    from metawiki.revision r
+    from thwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9678,7 +9639,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwikiquote' as wiki
-    from metawiki.revision r
+    from thwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9691,7 +9652,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwikisource' as wiki
-    from metawiki.revision r
+    from thwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9704,7 +9665,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'thwiktionary' as wiki
-    from metawiki.revision r
+    from thwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9717,7 +9678,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tiwiki' as wiki
-    from metawiki.revision r
+    from tiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9730,7 +9691,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tiwiktionary' as wiki
-    from metawiki.revision r
+    from tiwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9743,7 +9704,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tkwiki' as wiki
-    from metawiki.revision r
+    from tkwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9756,7 +9717,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tkwikibooks' as wiki
-    from metawiki.revision r
+    from tkwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9769,7 +9730,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tkwikiquote' as wiki
-    from metawiki.revision r
+    from tkwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9782,7 +9743,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tkwiktionary' as wiki
-    from metawiki.revision r
+    from tkwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9795,7 +9756,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tlwiki' as wiki
-    from metawiki.revision r
+    from tlwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9808,7 +9769,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tlwikibooks' as wiki
-    from metawiki.revision r
+    from tlwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9821,7 +9782,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tlwiktionary' as wiki
-    from metawiki.revision r
+    from tlwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9834,7 +9795,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tnwiki' as wiki
-    from metawiki.revision r
+    from tnwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9847,7 +9808,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tnwiktionary' as wiki
-    from metawiki.revision r
+    from tnwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9860,7 +9821,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'towiki' as wiki
-    from metawiki.revision r
+    from towiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9873,7 +9834,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'towiktionary' as wiki
-    from metawiki.revision r
+    from towiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9886,7 +9847,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tpiwiki' as wiki
-    from metawiki.revision r
+    from tpiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9899,7 +9860,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tpiwiktionary' as wiki
-    from metawiki.revision r
+    from tpiwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9912,7 +9873,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwiki' as wiki
-    from metawiki.revision r
+    from trwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9925,7 +9886,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwikibooks' as wiki
-    from metawiki.revision r
+    from trwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9938,7 +9899,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwikimedia' as wiki
-    from metawiki.revision r
+    from trwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9951,7 +9912,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwikinews' as wiki
-    from metawiki.revision r
+    from trwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9964,7 +9925,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwikiquote' as wiki
-    from metawiki.revision r
+    from trwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9977,7 +9938,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwikisource' as wiki
-    from metawiki.revision r
+    from trwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -9990,7 +9951,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'trwiktionary' as wiki
-    from metawiki.revision r
+    from trwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10003,7 +9964,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tswiki' as wiki
-    from metawiki.revision r
+    from tswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10016,7 +9977,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tswiktionary' as wiki
-    from metawiki.revision r
+    from tswiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10029,7 +9990,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ttwiki' as wiki
-    from metawiki.revision r
+    from ttwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10042,7 +10003,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ttwikibooks' as wiki
-    from metawiki.revision r
+    from ttwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10055,7 +10016,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ttwikiquote' as wiki
-    from metawiki.revision r
+    from ttwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10068,7 +10029,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ttwiktionary' as wiki
-    from metawiki.revision r
+    from ttwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10081,7 +10042,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tumwiki' as wiki
-    from metawiki.revision r
+    from tumwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10094,7 +10055,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'twwiki' as wiki
-    from metawiki.revision r
+    from twwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10107,7 +10068,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'twwiktionary' as wiki
-    from metawiki.revision r
+    from twwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10120,7 +10081,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tyvwiki' as wiki
-    from metawiki.revision r
+    from tyvwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10133,7 +10094,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'tywiki' as wiki
-    from metawiki.revision r
+    from tywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10146,7 +10107,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'uawikimedia' as wiki
-    from metawiki.revision r
+    from uawikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10159,7 +10120,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'udmwiki' as wiki
-    from metawiki.revision r
+    from udmwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10172,7 +10133,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ugwiki' as wiki
-    from metawiki.revision r
+    from ugwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10185,7 +10146,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ugwikibooks' as wiki
-    from metawiki.revision r
+    from ugwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10198,7 +10159,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ugwikiquote' as wiki
-    from metawiki.revision r
+    from ugwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10211,7 +10172,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ugwiktionary' as wiki
-    from metawiki.revision r
+    from ugwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10224,7 +10185,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwiki' as wiki
-    from metawiki.revision r
+    from ukwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10237,7 +10198,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikibooks' as wiki
-    from metawiki.revision r
+    from ukwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10250,7 +10211,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikimedia' as wiki
-    from metawiki.revision r
+    from ukwikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10263,7 +10224,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikinews' as wiki
-    from metawiki.revision r
+    from ukwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10276,7 +10237,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikiquote' as wiki
-    from metawiki.revision r
+    from ukwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10289,7 +10250,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikisource' as wiki
-    from metawiki.revision r
+    from ukwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10302,7 +10263,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwikivoyage' as wiki
-    from metawiki.revision r
+    from ukwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10315,7 +10276,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ukwiktionary' as wiki
-    from metawiki.revision r
+    from ukwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10328,7 +10289,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'urwiki' as wiki
-    from metawiki.revision r
+    from urwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10341,7 +10302,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'urwikibooks' as wiki
-    from metawiki.revision r
+    from urwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10354,7 +10315,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'urwikiquote' as wiki
-    from metawiki.revision r
+    from urwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10367,7 +10328,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'urwiktionary' as wiki
-    from metawiki.revision r
+    from urwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10380,7 +10341,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'usabilitywiki' as wiki
-    from metawiki.revision r
+    from usabilitywiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10393,7 +10354,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'uzwiki' as wiki
-    from metawiki.revision r
+    from uzwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10406,7 +10367,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'uzwikibooks' as wiki
-    from metawiki.revision r
+    from uzwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10419,7 +10380,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'uzwikiquote' as wiki
-    from metawiki.revision r
+    from uzwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10432,7 +10393,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'uzwiktionary' as wiki
-    from metawiki.revision r
+    from uzwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10445,7 +10406,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vecwiki' as wiki
-    from metawiki.revision r
+    from vecwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10458,7 +10419,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vecwikisource' as wiki
-    from metawiki.revision r
+    from vecwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10471,7 +10432,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vecwiktionary' as wiki
-    from metawiki.revision r
+    from vecwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10484,7 +10445,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vepwiki' as wiki
-    from metawiki.revision r
+    from vepwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10497,7 +10458,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vewiki' as wiki
-    from metawiki.revision r
+    from vewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10510,7 +10471,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vewikimedia' as wiki
-    from metawiki.revision r
+    from vewikimedia.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10523,7 +10484,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwiki' as wiki
-    from metawiki.revision r
+    from viwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10536,7 +10497,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwikibooks' as wiki
-    from metawiki.revision r
+    from viwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10549,7 +10510,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwikiquote' as wiki
-    from metawiki.revision r
+    from viwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10562,7 +10523,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwikisource' as wiki
-    from metawiki.revision r
+    from viwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10575,7 +10536,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwikivoyage' as wiki
-    from metawiki.revision r
+    from viwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10588,7 +10549,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'viwiktionary' as wiki
-    from metawiki.revision r
+    from viwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10601,7 +10562,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vlswiki' as wiki
-    from metawiki.revision r
+    from vlswiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10614,7 +10575,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'votewiki' as wiki
-    from metawiki.revision r
+    from votewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10627,7 +10588,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vowiki' as wiki
-    from metawiki.revision r
+    from vowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10640,7 +10601,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vowikibooks' as wiki
-    from metawiki.revision r
+    from vowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10653,7 +10614,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vowikiquote' as wiki
-    from metawiki.revision r
+    from vowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10666,7 +10627,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'vowiktionary' as wiki
-    from metawiki.revision r
+    from vowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10679,7 +10640,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'warehouse' as wiki
-    from metawiki.revision r
+    from warehouse.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10692,7 +10653,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'warwiki' as wiki
-    from metawiki.revision r
+    from warwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10705,7 +10666,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wawiki' as wiki
-    from metawiki.revision r
+    from wawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10718,7 +10679,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wawikibooks' as wiki
-    from metawiki.revision r
+    from wawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10731,7 +10692,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wawiktionary' as wiki
-    from metawiki.revision r
+    from wawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10744,7 +10705,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikidatawiki' as wiki
-    from metawiki.revision r
+    from wikidatawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10757,7 +10718,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2005wiki' as wiki
-    from metawiki.revision r
+    from wikimania2005wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10770,7 +10731,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2006wiki' as wiki
-    from metawiki.revision r
+    from wikimania2006wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10783,7 +10744,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2007wiki' as wiki
-    from metawiki.revision r
+    from wikimania2007wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10796,7 +10757,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2008wiki' as wiki
-    from metawiki.revision r
+    from wikimania2008wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10809,7 +10770,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2009wiki' as wiki
-    from metawiki.revision r
+    from wikimania2009wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10822,7 +10783,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2010wiki' as wiki
-    from metawiki.revision r
+    from wikimania2010wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10835,7 +10796,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2011wiki' as wiki
-    from metawiki.revision r
+    from wikimania2011wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10848,7 +10809,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2012wiki' as wiki
-    from metawiki.revision r
+    from wikimania2012wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10861,7 +10822,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2013wiki' as wiki
-    from metawiki.revision r
+    from wikimania2013wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10874,7 +10835,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2014wiki' as wiki
-    from metawiki.revision r
+    from wikimania2014wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10887,7 +10848,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2015wiki' as wiki
-    from metawiki.revision r
+    from wikimania2015wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10900,7 +10861,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2016wiki' as wiki
-    from metawiki.revision r
+    from wikimania2016wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10913,7 +10874,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimania2017wiki' as wiki
-    from metawiki.revision r
+    from wikimania2017wiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10926,7 +10887,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikishared' as wiki
-    from metawiki.revision r
+    from wikishared.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10939,7 +10900,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wowiki' as wiki
-    from metawiki.revision r
+    from wowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10952,7 +10913,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wowikiquote' as wiki
-    from metawiki.revision r
+    from wowikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10965,7 +10926,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wowiktionary' as wiki
-    from metawiki.revision r
+    from wowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10978,7 +10939,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wuuwiki' as wiki
-    from metawiki.revision r
+    from wuuwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -10991,7 +10952,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'xalwiki' as wiki
-    from metawiki.revision r
+    from xalwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11004,7 +10965,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'xhwiki' as wiki
-    from metawiki.revision r
+    from xhwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11017,7 +10978,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'xhwikibooks' as wiki
-    from metawiki.revision r
+    from xhwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11030,7 +10991,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'xhwiktionary' as wiki
-    from metawiki.revision r
+    from xhwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11043,7 +11004,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'xmfwiki' as wiki
-    from metawiki.revision r
+    from xmfwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11056,7 +11017,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yiwiki' as wiki
-    from metawiki.revision r
+    from yiwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11069,7 +11030,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yiwikisource' as wiki
-    from metawiki.revision r
+    from yiwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11082,7 +11043,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yiwiktionary' as wiki
-    from metawiki.revision r
+    from yiwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11095,7 +11056,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yowiki' as wiki
-    from metawiki.revision r
+    from yowiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11108,7 +11069,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yowikibooks' as wiki
-    from metawiki.revision r
+    from yowikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11121,7 +11082,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'yowiktionary' as wiki
-    from metawiki.revision r
+    from yowiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11134,7 +11095,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zawiki' as wiki
-    from metawiki.revision r
+    from zawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11147,7 +11108,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zawikibooks' as wiki
-    from metawiki.revision r
+    from zawikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11160,7 +11121,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zawikiquote' as wiki
-    from metawiki.revision r
+    from zawikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11173,7 +11134,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zawiktionary' as wiki
-    from metawiki.revision r
+    from zawiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11186,7 +11147,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zeawiki' as wiki
-    from metawiki.revision r
+    from zeawiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11199,7 +11160,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_classicalwiki' as wiki
-    from metawiki.revision r
+    from zh_classicalwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11212,7 +11173,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_min_nanwiki' as wiki
-    from metawiki.revision r
+    from zh_min_nanwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11225,7 +11186,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_min_nanwikibooks' as wiki
-    from metawiki.revision r
+    from zh_min_nanwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11238,7 +11199,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_min_nanwikiquote' as wiki
-    from metawiki.revision r
+    from zh_min_nanwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11251,7 +11212,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_min_nanwikisource' as wiki
-    from metawiki.revision r
+    from zh_min_nanwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11264,7 +11225,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_min_nanwiktionary' as wiki
-    from metawiki.revision r
+    from zh_min_nanwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11277,7 +11238,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zh_yuewiki' as wiki
-    from metawiki.revision r
+    from zh_yuewiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11290,7 +11251,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwiki' as wiki
-    from metawiki.revision r
+    from zhwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11303,7 +11264,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwikibooks' as wiki
-    from metawiki.revision r
+    from zhwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11316,7 +11277,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwikinews' as wiki
-    from metawiki.revision r
+    from zhwikinews.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11329,7 +11290,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwikiquote' as wiki
-    from metawiki.revision r
+    from zhwikiquote.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11342,7 +11303,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwikisource' as wiki
-    from metawiki.revision r
+    from zhwikisource.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11355,7 +11316,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwikivoyage' as wiki
-    from metawiki.revision r
+    from zhwikivoyage.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11368,7 +11329,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zhwiktionary' as wiki
-    from metawiki.revision r
+    from zhwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11381,7 +11342,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zuwiki' as wiki
-    from metawiki.revision r
+    from zuwiki.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11394,7 +11355,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zuwikibooks' as wiki
-    from metawiki.revision r
+    from zuwikibooks.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11407,7 +11368,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zuwiktionary' as wiki
-    from metawiki.revision r
+    from zuwiktionary.revision r
     join awight_meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -11420,7 +11381,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arbcom_cswiki' as wiki
-    from metawiki.revision r
+    from arbcom_cswiki.revision r
     group by 1,2;
 
 
@@ -11431,7 +11392,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arbcom_dewiki' as wiki
-    from metawiki.revision r
+    from arbcom_dewiki.revision r
     group by 1,2;
 
 
@@ -11442,7 +11403,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arbcom_enwiki' as wiki
-    from metawiki.revision r
+    from arbcom_enwiki.revision r
     group by 1,2;
 
 
@@ -11453,7 +11414,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arbcom_fiwiki' as wiki
-    from metawiki.revision r
+    from arbcom_fiwiki.revision r
     group by 1,2;
 
 
@@ -11464,7 +11425,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'arbcom_nlwiki' as wiki
-    from metawiki.revision r
+    from arbcom_nlwiki.revision r
     group by 1,2;
 
 
@@ -11475,7 +11436,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'auditcomwiki' as wiki
-    from metawiki.revision r
+    from auditcomwiki.revision r
     group by 1,2;
 
 
@@ -11486,7 +11447,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'boardgovcomwiki' as wiki
-    from metawiki.revision r
+    from boardgovcomwiki.revision r
     group by 1,2;
 
 
@@ -11497,7 +11458,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'boardwiki' as wiki
-    from metawiki.revision r
+    from boardwiki.revision r
     group by 1,2;
 
 
@@ -11508,7 +11469,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chairwiki' as wiki
-    from metawiki.revision r
+    from chairwiki.revision r
     group by 1,2;
 
 
@@ -11519,7 +11480,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'chapcomwiki' as wiki
-    from metawiki.revision r
+    from chapcomwiki.revision r
     group by 1,2;
 
 
@@ -11530,7 +11491,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'checkuserwiki' as wiki
-    from metawiki.revision r
+    from checkuserwiki.revision r
     group by 1,2;
 
 
@@ -11541,7 +11502,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'collabwiki' as wiki
-    from metawiki.revision r
+    from collabwiki.revision r
     group by 1,2;
 
 
@@ -11552,7 +11513,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ecwikimedia' as wiki
-    from metawiki.revision r
+    from ecwikimedia.revision r
     group by 1,2;
 
 
@@ -11563,7 +11524,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'execwiki' as wiki
-    from metawiki.revision r
+    from execwiki.revision r
     group by 1,2;
 
 
@@ -11574,7 +11535,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'fdcwiki' as wiki
-    from metawiki.revision r
+    from fdcwiki.revision r
     group by 1,2;
 
 
@@ -11585,7 +11546,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'grantswiki' as wiki
-    from metawiki.revision r
+    from grantswiki.revision r
     group by 1,2;
 
 
@@ -11596,7 +11557,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'iegcomwiki' as wiki
-    from metawiki.revision r
+    from iegcomwiki.revision r
     group by 1,2;
 
 
@@ -11607,7 +11568,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ilwikimedia' as wiki
-    from metawiki.revision r
+    from ilwikimedia.revision r
     group by 1,2;
 
 
@@ -11618,7 +11579,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'internalwiki' as wiki
-    from metawiki.revision r
+    from internalwiki.revision r
     group by 1,2;
 
 
@@ -11629,7 +11590,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'legalteamwiki' as wiki
-    from metawiki.revision r
+    from legalteamwiki.revision r
     group by 1,2;
 
 
@@ -11640,7 +11601,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'movementroleswiki' as wiki
-    from metawiki.revision r
+    from movementroleswiki.revision r
     group by 1,2;
 
 
@@ -11651,7 +11612,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'noboard_chapterswikimedia' as wiki
-    from metawiki.revision r
+    from noboard_chapterswikimedia.revision r
     group by 1,2;
 
 
@@ -11662,7 +11623,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'officewiki' as wiki
-    from metawiki.revision r
+    from officewiki.revision r
     group by 1,2;
 
 
@@ -11673,7 +11634,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'ombudsmenwiki' as wiki
-    from metawiki.revision r
+    from ombudsmenwiki.revision r
     group by 1,2;
 
 
@@ -11684,7 +11645,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'otrs_wikiwiki' as wiki
-    from metawiki.revision r
+    from otrs_wikiwiki.revision r
     group by 1,2;
 
 
@@ -11695,7 +11656,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'projectcomwiki' as wiki
-    from metawiki.revision r
+    from projectcomwiki.revision r
     group by 1,2;
 
 
@@ -11706,7 +11667,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'searchcomwiki' as wiki
-    from metawiki.revision r
+    from searchcomwiki.revision r
     group by 1,2;
 
 
@@ -11717,7 +11678,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'spcomwiki' as wiki
-    from metawiki.revision r
+    from spcomwiki.revision r
     group by 1,2;
 
 
@@ -11728,7 +11689,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'stewardwiki' as wiki
-    from metawiki.revision r
+    from stewardwiki.revision r
     group by 1,2;
 
 
@@ -11739,7 +11700,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'transitionteamwiki' as wiki
-    from metawiki.revision r
+    from transitionteamwiki.revision r
     group by 1,2;
 
 
@@ -11750,7 +11711,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wg_enwiki' as wiki
-    from metawiki.revision r
+    from wg_enwiki.revision r
     group by 1,2;
 
 
@@ -11761,7 +11722,7 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'wikimaniateamwiki' as wiki
-    from metawiki.revision r
+    from wikimaniateamwiki.revision r
     group by 1,2;
 
 
@@ -11772,6 +11733,6 @@ insert into awight_wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         'zerowiki' as wiki
-    from metawiki.revision r
+    from zerowiki.revision r
     group by 1,2;
 
