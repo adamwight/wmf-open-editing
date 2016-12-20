@@ -4,6 +4,8 @@ Introduction
 This is an exploration of the editing trends among Wikimedia Foundation staff,
 specifically the ratio of edits staff make on public vs. private wikis.
 
+Coordination is happening in https://etherpad.wikimedia.org/p/wmf-open-editing
+
 Methods
 ======
 
