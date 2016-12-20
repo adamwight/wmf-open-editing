@@ -14,7 +14,7 @@ insert into {prefix}wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         '{wikidb}' as wiki
-    from metawiki.revision r
+    from {wikidb}.revision r
     join {prefix}meta_wmf_accounts u
         on r.rev_user_text=u.username
     group by 1,2;
@@ -28,7 +28,7 @@ insert into {prefix}wiki_edit_counts
         left(r.rev_timestamp, 6) as month,
         count(*) as edit_count,
         '{wikidb}' as wiki
-    from metawiki.revision r
+    from {wikidb}.revision r
     group by 1,2;
 '''
 

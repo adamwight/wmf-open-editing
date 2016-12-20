@@ -27,7 +27,7 @@ Make a list of databases accessible from stat1002 and mark the private ones:
     https://noc.wikimedia.org/conf/private.dblist
 
 
-Count each user's revisions by day.
+Count each user's revisions by month.
 
 ```
 -- Basic query for one user:
@@ -38,22 +38,25 @@ SELECT LEFT(rev_timestamp, 6), COUNT(*) FROM revision WHERE rev_user_text = "Hal
 create table awight_meta_edit_counts
   select
     u.username as username,
-    left(r.rev_timestamp, 6) as day,
+    left(r.rev_timestamp, 6) as month,
     count(*) as edit_count,
 	'metawiki' as wiki
   from metawiki.revision r
   join awight_meta_wmf_accounts u
     on r.rev_user_text=u.username
   group by 1,2;
+
+-- This gets more complicated cos we want counts for all wikis.
 ```
 
 Write a Python script `make_loader.py` to create a SQL script that iterates
 over all wikis.  For private wikis, we dump all users.  For public wikis, we
 inner join against the staff accounts list.
 
-Count thank-yous from `log_search` and `logging`, see Extension:Thanks/ApiThanks
+    DB_PASS='foo' python make_loader.py > count_loader.sql
 
 TODO
 ======
 * Need help compiling staff volunteer accounts.
 * Count Flow entries, are they tracked in the revision table?
+* Count thank-yous from `log_search` and `logging`, see Extension:Thanks/ApiThanks
