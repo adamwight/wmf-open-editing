@@ -35,45 +35,24 @@ Make a list of databases accessible from stat1002 and mark the private ones:
 Count each user's revisions by month.
 
 ```
--- Basic query for one user:
--- https://gist.github.com/halfak/06af6b072357fb369b392a2551ddcd54
-SELECT LEFT(rev_timestamp, 6), COUNT(*) FROM revision WHERE rev_user_text = "Halfak (WMF)" GROUP BY 1;
+mysql < tables.sql
 
--- 
-create table awight_meta_edit_counts
-  select
-    u.username as username,
-    left(r.rev_timestamp, 6) as month,
-    count(*) as edit_count,
-	'metawiki' as wiki
-  from metawiki.revision r
-  join awight_meta_wmf_accounts u
-    on r.rev_user_text=u.username
-  group by 1,2;
+pip3 install multiquery
 
--- This gets more complicated cos we want counts for all wikis.
+multiquery load_public_counts.sql \
+	--dbnames public_dbs.txt \
+	-h analytics-store.eqiad.wmnet -u research --password='foo'
+
+multiquery load_private_counts.sql \
+	--dbnames private_dbs.txt \
+	-h analytics-store.eqiad.wmnet -u research --password='foo'
 ```
-
-Write a Python script `make_loader.py` to create a SQL script that iterates
-over all wikis.  For private wikis, we dump all users.  For public wikis, we
-inner join against the staff accounts list.
-
-    DB_PASS='foo' python make_loader.py > count_loader.sql
-
-Run `count_loader.sql`.
 
 Get totals:
 
 ```
-select
-	month,
-	sum(edit_count) as edit_count
-from awight_wiki_edit_counts c
-join awight_dbs d
-    on d.dbname=c.wiki
-where
-    d.private=0 -- and 1 in a separate query
-group by c.month;
+mysql staging < public_totals.sql > public_edits.csv
+mysql staging < private_totals.sql > private_edits.csv
 ```
 
 TODO
