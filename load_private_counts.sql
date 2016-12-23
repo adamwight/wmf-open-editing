@@ -1,4 +1,4 @@
-insert into staging.awight_wiki_edit_counts
+insert into staging.woe_wiki_edit_count
     select
         r.rev_user_text as username,
         left(r.rev_timestamp, 6) as month,
