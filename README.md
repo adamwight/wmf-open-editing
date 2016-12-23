@@ -14,46 +14,45 @@ discuss the implications of more detailed grouping.
 Methods
 ======
 
-We need to compile WMF usernames on public wikis, volunteer accounts that staff
-might use, and Wikitech accounts belonging to WMF staff.  The CR+2 list might
-get us started.
+See `graphs.ipynb` for the source code used to create the numbers, and for
+graphs with the draft results.
 
-Dump the obvious, public staff usernames.
-```
-use metawiki;
-select user_name from user where user_name like '%WMF%';
-```
-Removed test, generic and non-wmf accounts manually.  The resulting list is in
-`meta-wmf-accounts.txt`.
+Collect staff usernames
+-----
 
-Make a list of databases accessible from stat1002 and mark the private ones:
+I've hand-picked over every meta.wikimedia.org username matching `.*WMF.*`, to
+create `meta-wmf-accounts.txt`.
 
-    https://meta.wikimedia.org/wiki/Wikimedia_wikis#Private_wikis
-    https://noc.wikimedia.org/conf/private.dblist
+TODO: It would be interesting to also chart staff edits made using volunteer
+accounts, and Wikitech accounts belonging to WMF staff (although that database
+is not replicated yet).  Please help by adding yourself to
+`staff-volunteer-accounts.txt`!
 
+Count edits
+-----
 
-Count each user's revisions by month.
+Count each user's revisions by month.  For private wikis, count everything
+(TODO: identify and remove bot edits and imports).  On public wikis, join
+revisions against our list of WMF staff accounts.  The counts are grouped by
+username and calendar month--note that this intermediate data is particularly
+sensitive since it's broken down by individual.  In this form, we can look
+through the data for outliers that indicate a username is being used by a bot.
 
-```
-mysql < tables.sql
+Sum edits
+-----
 
-pip3 install multiquery
+Edit counts are grouped by month, and summed in three categories: private wiki
+edits, public edits made using a staff account, and public wiki edits made with
+a staff member's volunteer account.
 
-multiquery load_public_counts.sql \
-	--dbnames public_dbs.txt \
-	-h analytics-store.eqiad.wmnet -u research --password='foo'
+Comparisons
+-----
 
-multiquery load_private_counts.sql \
-	--dbnames private_dbs.txt \
-	-h analytics-store.eqiad.wmnet -u research --password='foo'
-```
+We're currently graphing:
+* Private wiki edits over time.
+* Public wiki edits over time.
+* Ratio of public to private wiki edits over time.
 
-Get totals:
-
-```
-mysql staging < public_totals.sql > public_edits.csv
-mysql staging < private_totals.sql > private_edits.csv
-```
 
 TODO
 ======

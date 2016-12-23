@@ -10,14 +10,10 @@ if [ -n "$MQ_PATH" ]; then
 fi
 
 multiquery load_public_counts.sql --dbnames public_dbs.txt
-
 multiquery load_private_counts.sql --dbnames private_dbs.txt
-
 multiquery load_volunteer_counts.sql --dbnames public_dbs.txt
 
 # Export totals to CSV
-mysql $DB < public_totals.sql > public_edits.csv
-
-mysql $DB < private_totals.sql > private_edits.csv
-
-mysql $DB < volunteer_totals.sql > volunteer_edits.csv
+mysql $DB < export_public_totals.sql > public_edits.csv
+mysql $DB < export_private_totals.sql > private_edits.csv
+mysql $DB < export_volunteer_totals.sql > volunteer_edits.csv
